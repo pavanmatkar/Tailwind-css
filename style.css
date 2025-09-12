@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme{
+    --breakpoint-sm:700px;
+    --breakpoint-md:900px;
+    --breakpoint-lg:1000px; /*these three above are default break points*/
+    --breakpoint-big:1300px; /*extended break point*/
+    --padding-10:100px;     /*pt,pb,pl,pr all are affected*/
+    --padding-1:50px;
+    --padding-c-50:50px; /*custom*/
+    --padding-wrapper:10px;
+    --margin-20:20px;
+    --margin-c-50:50px;
+    --height-1:100px;
+    --width-1:100px;
+    --size-1:100px;
+    --size-custom-10:1000px;
+}
