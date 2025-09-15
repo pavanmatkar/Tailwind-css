@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dialog with Tailwind CSS</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- inset streches the bgcolor to top bottom left right i.e. full body -->
+    <div class="bg-gray-500 fixed inset-0"></div>
+    <div class="fixed inset-0">
+      <!-- justify-center and items-center horizontally and vertically center kar deta hai -->
+      <div class="flex h-full justify-center items-center">
+        <div class="bg-white w-[512px] text-left shadow-xl rounded relative">
+          <div class="p-5">
+            <div class="flex items-start">
+              <img class="w-8" src="error.png" alt="error" />
+              <div class="ml-4">
+                <h3 class="text-gray-900 font-semibold">Deactivate Account</h3>
+                <div class="m-2">
+                  <p class="text-sm text-gray-600">
+                    Are you sure you want to deactivate your account? All of
+                    your data will be permanently removed. This action cannot be
+                    undone.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-100 px-4 py-3 flex flex-row-reverse">
+            <button
+              class="bg-red-600 font-semibold text-white ml-3 rounded-md px-3 py-2 hover:bg-red-400"
+            >
+              Deactivate
+            </button>
+            <button class="bg-white ml-3 shadow-sm ring-1 ring-inset rounded-md ring-gray-300 font-semibold px-3 py-2 hover:bg-gray-50">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
